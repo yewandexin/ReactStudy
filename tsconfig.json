@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "esnext", // 目标语言的版本
+        "module": "esnext", // 生成代码的模板标准
+        "jsx": "preserve",
+        "importHelpers": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "moduleResolution": "node"
+    },
+    "include": [
+        "./src/**/*",
+    ],
+}

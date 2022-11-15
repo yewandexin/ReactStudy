@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import "./Maizuo.css"
 export default class MaiZuoMenu extends Component {
     state = {
         Menu: [
@@ -19,7 +19,7 @@ export default class MaiZuoMenu extends Component {
     }
     render() {
         return (
-            <div >
+            <div className="aaa">
                 {
                     this.state.Menu.map(item => <li>{item.text}</li>)
                 }

@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Study1 from './Date/Study1';
+import Study2 from './Date/Study2';
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,8 @@ function App() {
         >
           Learn React
         </a>
+        <Study1></Study1>
+        <Study2></Study2>
       </header>
     </div>
   );

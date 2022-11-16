@@ -1,3 +1,10 @@
-.aaa{
-    margin-top: 10px;
+.Menu {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+.Menu li.MenuItem {
+  flex: 1;
+  list-style-type: none;
 }

@@ -1,6 +1,20 @@
 import React, { Component } from 'react'
 import "./Maizuo.css"
-export default class MaiZuoMenu extends Component {
+import propType from 'prop-types'
+
+interface MaiZuoMenuProps {
+    Menu: Array<{
+        id: number
+        text: string
+    }>
+}
+export default class MaiZuoMenu extends Component<{ name: string, on: string }, MaiZuoMenuProps> {
+    static propTypes = {
+        name: propType.string
+    }
+    static defaultProps = {
+        name: "1111"
+    }
     state = {
         Menu: [
             {
@@ -18,11 +32,17 @@ export default class MaiZuoMenu extends Component {
         ]
     }
     render() {
+        const { name, on } = this.props
         return (
-            <div className="aaa">
-                {
-                    this.state.Menu.map(item => <li>{item.text}</li>)
-                }
+            <div>
+                <div className="Menu">
+                    {
+                        this.state.Menu.map((item, index) => <li key={index} className='MenuItem'>{item.text}</li>)
+                    }
+                </div>
+                <div>
+                    {name}
+                </div>
             </div>
         )
     }

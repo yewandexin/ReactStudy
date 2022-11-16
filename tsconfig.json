@@ -4,6 +4,7 @@
         "module": "esnext", // 生成代码的模板标准
         "jsx": "preserve",
         "importHelpers": true,
+        "allowSyntheticDefaultImports":true,
         "baseUrl": ".",
         "paths": {
             "@/*": [
